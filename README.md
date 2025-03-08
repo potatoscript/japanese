@@ -1,8 +1,7 @@
 # JLPT N1 Tutorial:  
 | Title    | Remark  |  
 | -------------| -----|  
-| [Introduction](https://github.com/potatoscript/japanese/wiki/Introduction) | Preparation & Study Plan |  
-| [JLPT N1 Test Overview](https://github.com/potatoscript/japanese/wiki/N1-Overview) | Test format, Sections & Scoring |  
+| [JLPT N1 Test Overview](https://github.com/potatoscript/japanese/wiki/Introduction) | Test format, Sections & Scoring |  
 | [Study Techniques & Resources](https://github.com/potatoscript/japanese/wiki/Study-Techniques) | How to study effectively |  
 | **Vocabulary (語彙)** | **Words & Expressions** |  
 | [Core N1 Vocabulary](https://github.com/potatoscript/japanese/wiki/Core-Vocabulary) | Essential words & meanings |  
