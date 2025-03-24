@@ -1,4 +1,13 @@
-# JLPT N1 Tutorial:  
+# JLPT_N1
+
+* [JLPT N1 Tutorial](#jlpt-n1-tutorial)
+* [Daily Training](#daily-training)
+  
+---
+
+# JLPT N1 Tutorial
+[menu](#jlpt_n1)
+
 | Title    | Remark  |  
 | -------------| -----|  
 | [JLPT N1 Test Overview](https://github.com/potatoscript/japanese/wiki/Introduction) | Test format, Sections & Scoring |  
@@ -35,3 +44,19 @@
 | [Practice Questions](https://github.com/potatoscript/japanese/wiki/Practice-Questions) | 例題と解説 |  
 | [Full Mock Test](https://github.com/potatoscript/japanese/wiki/Mock-Test) | 実際の試験形式 |  
 | [Exam Day Tips](https://github.com/potatoscript/japanese/wiki/Exam-Tips) | 試験当日の戦略 | 
+
+---
+
+# Daily Training
+[menu](#jlpt_n1)
+
+| **Title** | **Remark** |  
+| -------------| -----|  
+| [Day 001: Vocabulary & Grammar Basics](https://github.com/potatoscript/japanese/wiki/Day-001) | Introduction to key vocabulary and fundamental grammar for JLPT N1. |  
+| [Day 002: Advanced Vocabulary & Polite Expressions](https://github.com/potatoscript/japanese/wiki/Day-002) | Focused on formal expressions and vocabulary for business and academic use. |  
+| [Day 003: Business & Meeting Vocabulary + Complex Grammar](https://github.com/potatoscript/japanese/wiki/Day-003) | Learned high-level business vocabulary and complex grammar structures. |  
+| [Day 004: Critical Verbs & Idiomatic Expressions](https://github.com/potatoscript/japanese/wiki/Day-004) | Covered advanced verbs and idiomatic expressions frequently used in professional settings. |  
+| [Day 005: Legal & Contractual Terminology](https://github.com/potatoscript/japanese/wiki/Day-005) | Explored key terms used in legal, contractual, and formal documents. |  
+| [Day 006: Negotiation, Planning & Analytical Verbs](https://github.com/potatoscript/japanese/wiki/Day-006) | Introduced vocabulary for negotiations, strategic planning, and analytical reasoning. |  
+| [Day 007: Leadership, Supervision & Compliance Vocabulary](https://github.com/potatoscript/japanese/wiki/Day-007) | Learned terms related to leadership, supervision, compliance, and management. |  
+
