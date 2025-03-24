@@ -1,4 +1,4 @@
-# JLPT_N1
+# JLPT N1
 
 * [JLPT N1 Tutorial](#jlpt-n1-tutorial)
 * [Daily Training](#daily-training)
@@ -6,7 +6,7 @@
 ---
 
 # JLPT N1 Tutorial
-[menu](#jlpt_n1)
+[menu](#jlpt-n1)
 
 | Title    | Remark  |  
 | -------------| -----|  
@@ -48,7 +48,7 @@
 ---
 
 # Daily Training
-[menu](#jlpt_n1)
+[menu](#jlpt-n1)
 
 | **Title** | **Remark** |  
 | -------------| -----|  
