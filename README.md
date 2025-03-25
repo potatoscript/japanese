@@ -59,4 +59,6 @@
 | [Day 005: Legal & Contractual Terminology](https://github.com/potatoscript/japanese/wiki/Day-005) | Explored key terms used in legal, contractual, and formal documents. |  
 | [Day 006: Negotiation, Planning & Analytical Verbs](https://github.com/potatoscript/japanese/wiki/Day-006) | Introduced vocabulary for negotiations, strategic planning, and analytical reasoning. |  
 | [Day 007: Leadership, Supervision & Compliance Vocabulary](https://github.com/potatoscript/japanese/wiki/Day-007) | Learned terms related to leadership, supervision, compliance, and management. |  
+| [Day 008: Deviation, Compliance & Immediate Response Vocabulary](https://github.com/potatoscript/japanese/wiki/Day-008) | Mastered vocabulary related to deviation, compliance, and immediate action, along with complex grammar structures. |  
+
 
