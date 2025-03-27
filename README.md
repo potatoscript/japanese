@@ -60,5 +60,4 @@
 | [Day 006: Negotiation, Planning & Analytical Verbs](https://github.com/potatoscript/japanese/wiki/Day-006) | Introduced vocabulary for negotiations, strategic planning, and analytical reasoning. |  
 | [Day 007: Leadership, Supervision & Compliance Vocabulary](https://github.com/potatoscript/japanese/wiki/Day-007) | Learned terms related to leadership, supervision, compliance, and management. |  
 | [Day 008: Deviation, Compliance & Immediate Response Vocabulary](https://github.com/potatoscript/japanese/wiki/Day-008) | Mastered vocabulary related to deviation, compliance, and immediate action, along with complex grammar structures. |  
-
-
+| [Day 009: Advanced Vocabulary & Business Grammar](https://github.com/potatoscript/japanese/wiki/Day-009) | Focused on vocabulary and grammar related to business practices, such as compromise, proposal, execution, and compliance, along with example usage in professional contexts. |
