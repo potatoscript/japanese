@@ -50,20 +50,20 @@
 # Daily Training
 [menu](#jlpt-n1)
 
-# **日々のトレーニング**
+## **日々のトレーニング**
 
-| **タイトル** | **説明** |  
-| -------------| -----|  
-| [Day 001: 語彙と文法の基本](https://github.com/potatoscript/japanese/wiki/Day-001) | JLPT N1向けの重要な語彙と基本的な文法の紹介。 |  
-| [Day 002: 上級語彙と丁寧表現](https://github.com/potatoscript/japanese/wiki/Day-002) | ビジネスや学術的な場面で使用される丁寧な表現と語彙に特化。 |  
-| [Day 003: ビジネス会話・ミーティング用語と複雑な文法](https://github.com/potatoscript/japanese/wiki/Day-003) | 高度なビジネス用語と複雑な文法構造の学習。 |  
-| [Day 004: 重要動詞と慣用表現](https://github.com/potatoscript/japanese/wiki/Day-004) | 専門的な場面でよく使われる上級レベルの動詞と慣用表現を習得。 |  
-| [Day 005: 法律・契約関連用語](https://github.com/potatoscript/japanese/wiki/Day-005) | 法律、契約、公式文書で使用される重要な語彙の解説。 |  
-| [Day 006: 交渉・計画・分析動詞](https://github.com/potatoscript/japanese/wiki/Day-006) | 交渉、戦略的計画、分析的思考に関する語彙の紹介。 |  
-| [Day 007: リーダーシップ・管理・コンプライアンス用語](https://github.com/potatoscript/japanese/wiki/Day-007) | リーダーシップ、監督、コンプライアンス、マネジメントに関する用語を習得。 |  
-| [Day 008: 逸脱・コンプライアンス・即応用語](https://github.com/potatoscript/japanese/wiki/Day-008) | 逸脱、コンプライアンス、即時対応に関する語彙と複雑な文法をマスター。 |  
-| [Day 009: 上級語彙とビジネス文法](https://github.com/potatoscript/japanese/wiki/Day-009) | 妥協、提案、実行、コンプライアンスなどのビジネス慣行に関連する語彙と文法、実務での使用例を学習。 |  
-| [Day 010: 上級語彙とビジネス文法](https://github.com/potatoscript/japanese/wiki/Day-010) | 規則の設定、課題の発生、業務への関与、残業対応など、目的・変化・手段を表す文法構造を含むビジネス語彙と文法に焦点。 |  
-| [Day 011: 精緻化・介入・責任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-011) | 制限、例外、必要条件を強調する文法構造と共に、精緻化、介入、責任に関連する語彙に特化。 |  
-| [Day 012: 育成・プライバシー・責任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-012) | 条件、禁止、目的を示す文法構造と共に、育成、プライバシー、責任に関連する語彙に集中。 |  
-| [Day 013: 設立・戦略・委任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-013) | 挑戦、制限、特別な能力を表現する文法構造と共に、設立、戦略、委任に関連する語彙に焦点。 |  
+| **Day** | **タイトル** | **説明** |  
+| ------ | ------------- | ----- |  
+| 001 | [語彙と文法の基本](https://github.com/potatoscript/japanese/wiki/Day-001) | JLPT N1向けの重要な語彙と基本的な文法の紹介。 |  
+| 002 | [上級語彙と丁寧表現](https://github.com/potatoscript/japanese/wiki/Day-002) | ビジネスや学術的な場面で使用される丁寧な表現と語彙に特化。 |  
+| 003 | [ビジネス会話・ミーティング用語と複雑な文法](https://github.com/potatoscript/japanese/wiki/Day-003) | 高度なビジネス用語と複雑な文法構造の学習。 |  
+| 004 | [重要動詞と慣用表現](https://github.com/potatoscript/japanese/wiki/Day-004) | 専門的な場面でよく使われる上級レベルの動詞と慣用表現を習得。 |  
+| 005 | [法律・契約関連用語](https://github.com/potatoscript/japanese/wiki/Day-005) | 法律、契約、公式文書で使用される重要な語彙の解説。 |  
+| 006 | [交渉・計画・分析動詞](https://github.com/potatoscript/japanese/wiki/Day-006) | 交渉、戦略的計画、分析的思考に関する語彙の紹介。 |  
+| 007 | [リーダーシップ・管理・コンプライアンス用語](https://github.com/potatoscript/japanese/wiki/Day-007) | リーダーシップ、監督、コンプライアンス、マネジメントに関する用語を習得。 |  
+| 008 | [逸脱・コンプライアンス・即応用語](https://github.com/potatoscript/japanese/wiki/Day-008) | 逸脱、コンプライアンス、即時対応に関する語彙と複雑な文法をマスター。 |  
+| 009 | [上級語彙とビジネス文法](https://github.com/potatoscript/japanese/wiki/Day-009) | 妥協、提案、実行、コンプライアンスなどのビジネス慣行に関連する語彙と文法、実務での使用例を学習。 |  
+| 010 | [上級語彙とビジネス文法](https://github.com/potatoscript/japanese/wiki/Day-010) | 規則の設定、課題の発生、業務への関与、残業対応など、目的・変化・手段を表す文法構造を含むビジネス語彙と文法に焦点。 |  
+| 011 | [精緻化・介入・責任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-011) | 制限、例外、必要条件を強調する文法構造と共に、精緻化、介入、責任に関連する語彙に特化。 |  
+| 012 | [育成・プライバシー・責任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-012) | 条件、禁止、目的を示す文法構造と共に、育成、プライバシー、責任に関連する語彙に集中。 |  
+| 013 | [設立・戦略・委任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-013) | 挑戦、制限、特別な能力を表現する文法構造と共に、設立、戦略、委任に関連する語彙に焦点。 |  
