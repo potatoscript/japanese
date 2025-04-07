@@ -70,7 +70,7 @@
 | 014 | [Day 14](https://github.com/potatoscript/japanese/wiki/Day-014) |  | 
 | 015 | [Day 15](https://github.com/potatoscript/japanese/wiki/Day-015) |  | 
 | 016 | [革新・柔軟性・計画に関する語彙](https://github.com/potatoscript/japanese/wiki/Day-016) | 革新性、ビジネスの柔軟性、計画立案、評価に関連する語彙と、「〜ながらも」「〜たところ」「〜てならない」「〜ないではいられない」などの高度な文法を学習します。 |
-| 017 | [Day 17](https://github.com/potatoscript/japanese/wiki/Day-017) |  | 
+| 017 | [ビジネスコミュニケーションのための上級語彙と文法](https://github.com/potatoscript/japanese/wiki/Day-017) | フォーマルな表現や微妙な言い回しを含む、ビジネスでのやり取りに必須な語彙と文法に焦点を当てています。 |
 | 018 | [Day 18](https://github.com/potatoscript/japanese/wiki/Day-018) |  | 
 | 019 | [Day 19](https://github.com/potatoscript/japanese/wiki/Day-019) |  | 
 | 020 | [Day 20](https://github.com/potatoscript/japanese/wiki/Day-020) |  | 
