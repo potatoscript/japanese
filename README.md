@@ -67,10 +67,10 @@
 | 011 | [精緻化・介入・責任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-011) | 制限、例外、必要条件を強調する文法構造と共に、精緻化、介入、責任に関連する語彙に特化。 |  
 | 012 | [育成・プライバシー・責任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-012) | 条件、禁止、目的を示す文法構造と共に、育成、プライバシー、責任に関連する語彙に集中。 |  
 | 013 | [設立・戦略・委任関連語彙](https://github.com/potatoscript/japanese/wiki/Day-013) | 挑戦、制限、特別な能力を表現する文法構造と共に、設立、戦略、委任に関連する語彙に焦点。 |  
-| 014 | [](https://github.com/potatoscript/japanese/wiki/Day-014) |  | 
-| 015 | [](https://github.com/potatoscript/japanese/wiki/Day-015) |  | 
-| 016 | [](https://github.com/potatoscript/japanese/wiki/Day-016) |  | 
-| 017 | [](https://github.com/potatoscript/japanese/wiki/Day-017) |  | 
-| 018 | [](https://github.com/potatoscript/japanese/wiki/Day-018) |  | 
-| 019 | [](https://github.com/potatoscript/japanese/wiki/Day-019) |  | 
-| 020 | [](https://github.com/potatoscript/japanese/wiki/Day-020) |  | 
+| 014 | [Day 14](https://github.com/potatoscript/japanese/wiki/Day-014) |  | 
+| 015 | [Day 15](https://github.com/potatoscript/japanese/wiki/Day-015) |  | 
+| 016 | [Day 16](https://github.com/potatoscript/japanese/wiki/Day-016) |  | 
+| 017 | [Day 17](https://github.com/potatoscript/japanese/wiki/Day-017) |  | 
+| 018 | [Day 18](https://github.com/potatoscript/japanese/wiki/Day-018) |  | 
+| 019 | [Day 19](https://github.com/potatoscript/japanese/wiki/Day-019) |  | 
+| 020 | [Day 20](https://github.com/potatoscript/japanese/wiki/Day-020) |  | 
