@@ -1,0 +1,106 @@
+{
+    "correct": 3,
+    "wrong": 17,
+    "history": [
+        {
+            "date": "2026-05-14 19:31:52",
+            "grammar": "～を通じて",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 19:32:17",
+            "grammar": "～にかけては",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 19:32:37",
+            "grammar": "～っぱなし",
+            "result": "Correct"
+        },
+        {
+            "date": "2026-05-14 19:32:49",
+            "grammar": "～ばかりに",
+            "result": "Correct"
+        },
+        {
+            "date": "2026-05-14 19:33:17",
+            "grammar": "～といったら",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 19:34:12",
+            "grammar": "～ようがない",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 19:34:30",
+            "grammar": "～としたところで",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 19:35:06",
+            "grammar": "～にあたらない",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 19:35:25",
+            "grammar": "～ないことには",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 19:35:46",
+            "grammar": "～つつも",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:36:49",
+            "grammar": "～にかけては",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:37:07",
+            "grammar": "～っぱなし",
+            "result": "Correct"
+        },
+        {
+            "date": "2026-05-14 20:37:18",
+            "grammar": "～んばかりだ",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:37:35",
+            "grammar": "～といったら",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:38:04",
+            "grammar": "～ないことには",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:38:49",
+            "grammar": "～つつも",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:40:17",
+            "grammar": "～を通じて",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:40:29",
+            "grammar": "ただ～のみ",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:40:51",
+            "grammar": "～としたところで",
+            "result": "Wrong"
+        },
+        {
+            "date": "2026-05-14 20:42:47",
+            "grammar": "～のみならず",
+            "result": "Wrong"
+        }
+    ]
+}
