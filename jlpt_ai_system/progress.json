@@ -1,5 +1,38 @@
 {
-    "correct": 0,
-    "wrong": 0,
-    "history": []
+    "correct": 2,
+    "wrong": 1,
+    "history": [
+        {
+            "date": "2026-05-20 20:53:22",
+            "grammar": "～ばかりに",
+            "difficulty": "medium",
+            "result": "Correct"
+        },
+        {
+            "date": "2026-05-20 20:53:32",
+            "grammar": "～つつも",
+            "difficulty": "hard",
+            "result": "Correct"
+        },
+        {
+            "date": "2026-05-20 20:53:36",
+            "grammar": "～まい",
+            "difficulty": "hard",
+            "result": "Wrong"
+        }
+    ],
+    "srs": {
+        "～ばかりに": {
+            "level": 2,
+            "next_review": "2026-05-23"
+        },
+        "～つつも": {
+            "level": 2,
+            "next_review": "2026-05-23"
+        },
+        "～まい": {
+            "level": 1,
+            "next_review": "2026-05-21"
+        }
+    }
 }

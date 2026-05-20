@@ -1,12 +1,24 @@
 import random
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from grammar_data import GRAMMAR_DATA
 from vocab_data import VOCAB_DATA
 
 SAVE_FILE = "progress.json"
 
+# =========================
+# SRS SETTINGS
+# =========================
+
+SRS_LEVELS = {
+
+    1: 1,     # 1 day
+    2: 3,     # 3 days
+    3: 7,     # 1 week
+    4: 14,    # 2 weeks
+    5: 30     # 1 month
+}
 
 # =========================
 # LOAD / SAVE
@@ -28,6 +40,76 @@ def load_progress():
 def save_progress(progress):
     with open(SAVE_FILE, "w", encoding="utf-8") as f:
         json.dump(progress, f, ensure_ascii=False, indent=4)
+
+
+# =========================
+# UPDATE SRS
+# =========================
+
+def update_srs(
+
+    progress,
+
+    grammar,
+
+    is_correct
+
+):
+
+    # =========================
+    # CREATE SRS DATA
+    # =========================
+
+    if grammar not in progress["srs"]:
+
+        progress["srs"][grammar] = {
+
+            "level": 1,
+
+            "next_review":
+            datetime.now().strftime(
+                "%Y-%m-%d"
+            )
+        }
+
+    srs_data = progress["srs"][grammar]
+
+    # =========================
+    # CORRECT
+    # =========================
+
+    if is_correct:
+
+        if srs_data["level"] < 5:
+
+            srs_data["level"] += 1
+
+    # =========================
+    # WRONG
+    # =========================
+
+    else:
+
+        srs_data["level"] = 1
+
+    # =========================
+    # NEXT REVIEW DATE
+    # =========================
+
+    days = SRS_LEVELS[
+        srs_data["level"]
+    ]
+
+    next_date = (
+
+        datetime.now()
+
+        + timedelta(days=days)
+
+    ).strftime("%Y-%m-%d")
+
+    srs_data["next_review"] = next_date
+
 
 
 # =========================
@@ -71,60 +153,140 @@ def grammar_quiz():
 
     progress = load_progress()
 
+    print("\n========== DIFFICULTY ==========")
+    print("1. Easy")
+    print("2. Medium")
+    print("3. Hard")
+    print("4. All")
+
+    difficulty_choice = input(
+        "\nSelect difficulty: "
+    ).strip()
+
+    if difficulty_choice == "1":
+        selected_difficulty = "easy"
+
+    elif difficulty_choice == "2":
+        selected_difficulty = "medium"
+
+    elif difficulty_choice == "3":
+        selected_difficulty = "hard"
+
+    else:
+        selected_difficulty = "all"
+
+    # =========================
+    # FILTER QUESTIONS
+    # =========================
+
+    if selected_difficulty == "all":
+
+        filtered_questions = GRAMMAR_DATA
+
+    else:
+
+        filtered_questions = [
+
+            item for item in GRAMMAR_DATA
+
+            if item["difficulty"]
+            == selected_difficulty
+        ]
+
+    # =========================
+    # CHECK EMPTY
+    # =========================
+
+    if len(filtered_questions) == 0:
+
+        print(
+            "\nNo grammar found "
+            "for this difficulty."
+        )
+
+        return
+
+    # =========================
+    # RANDOM QUESTIONS
+    # =========================
+
     questions = random.sample(
-        GRAMMAR_DATA,
-        min(5, len(GRAMMAR_DATA))
+        filtered_questions,
+        min(5, len(filtered_questions))
     )
 
     score = 0
 
-    for index, item in enumerate(questions, start=1):
+    for index, item in enumerate(
+        questions,
+        start=1
+    ):
 
-        print(f"\n========== QUESTION {index} ==========")
+        print(
+            f"\n========== QUESTION {index} =========="
+        )
 
         print(item["quiz"])
 
         correct_answer = item["answer"]
 
-        wrong_answers = []
+        all_wrong_answers = [
 
-        while len(wrong_answers) < 3:
+            item["answer"]
 
-            random_item = random.choice(GRAMMAR_DATA)
+            for item in GRAMMAR_DATA
 
-            wrong = random_item["answer"]
+            if item["answer"] != correct_answer
+        ]
 
-            if (
-                wrong != correct_answer
-                and wrong not in wrong_answers
-            ):
-                wrong_answers.append(wrong)
+        random.shuffle(all_wrong_answers)
 
-        choices = wrong_answers + [correct_answer]
+        wrong_answers = all_wrong_answers[:3]
+
+        choices = (
+            wrong_answers
+            + [correct_answer]
+        )
 
         random.shuffle(choices)
 
-        for i, choice in enumerate(choices, start=1):
+        for i, choice in enumerate(
+            choices,
+            start=1
+        ):
+
             print(f"{i}. {choice}")
 
         user_input = input(
-            "\nSelect answer number (q = menu): "
-        )
+            "\nSelect answer "
+            "(q = menu): "
+        ).strip()
 
         if check_exit(user_input):
             return
 
         if not user_input.isdigit():
+
             print("Invalid input.")
+
             continue
 
         user_index = int(user_input) - 1
 
-        if user_index < 0 or user_index >= len(choices):
+        if (
+            user_index < 0
+            or user_index >= len(choices)
+        ):
+
             print("Invalid choice.")
+
             continue
 
         selected_answer = choices[user_index]
+
+        # =========================
+        # CORRECT
+        # =========================
 
         if selected_answer == correct_answer:
 
@@ -134,30 +296,59 @@ def grammar_quiz():
 
             progress["correct"] += 1
 
+            update_srs(
+                progress,
+                item["grammar"],
+                True
+            )
+                       
             result = "Correct"
+
+        # =========================
+        # WRONG
+        # =========================
 
         else:
 
             print("❌ Wrong")
-            print("Correct Answer:", correct_answer)
+
+            print(
+                "Correct Answer:",
+                correct_answer
+            )
 
             progress["wrong"] += 1
+
+            update_srs(
+                progress,
+                item["grammar"],
+                False
+            )
 
             result = "Wrong"
 
         progress["history"].append({
+
             "date": datetime.now().strftime(
                 "%Y-%m-%d %H:%M:%S"
             ),
+
             "grammar": item["grammar"],
+
+            "difficulty":
+            item["difficulty"],
+
             "result": result
         })
 
     print("\n========== RESULT ==========")
-    print(f"Score: {score}/{len(questions)}")
+
+    print(
+        f"Score: "
+        f"{score}/{len(questions)}"
+    )
 
     save_progress(progress)
-
 
 # =========================
 # VOCAB QUIZ
@@ -223,6 +414,205 @@ def statistics_mode():
 
         print("No statistics yet.")
 
+def weak_grammar_review():
+
+    progress = load_progress()
+
+    print(
+        "\n========== "
+        "WEAK GRAMMAR "
+        "=========="
+    )
+
+    wrong_grammar = {}
+
+    # =========================
+    # COUNT WRONG ANSWERS
+    # =========================
+
+    for item in progress["history"]:
+
+        if item["result"] == "Wrong":
+
+            grammar = item["grammar"]
+
+            if grammar not in wrong_grammar:
+
+                wrong_grammar[grammar] = 0
+
+            wrong_grammar[grammar] += 1
+
+    # =========================
+    # EMPTY
+    # =========================
+
+    if len(wrong_grammar) == 0:
+
+        print(
+            "\nExcellent!"
+        )
+
+        print(
+            "No weak grammar yet."
+        )
+
+        return
+
+    # =========================
+    # SORT
+    # =========================
+
+    sorted_grammar = sorted(
+
+        wrong_grammar.items(),
+
+        key=lambda x: x[1],
+
+        reverse=True
+    )
+
+    # =========================
+    # DISPLAY
+    # =========================
+
+    for grammar, count in sorted_grammar:
+
+        print(
+            f"\n{grammar}"
+        )
+
+        print(
+            f"Wrong Count: {count}"
+        )
+
+        for item in GRAMMAR_DATA:
+
+            if item["grammar"] == grammar:
+
+                print(
+                    "Meaning:",
+                    item["meaning"]
+                )
+
+                print(
+                    "Example:",
+                    item["example"]
+                )
+
+# =========================
+# DAILY REVIEW
+# =========================
+
+def daily_review():
+
+    progress = load_progress()
+
+    print(
+        "\n========== "
+        "DAILY REVIEW "
+        "=========="
+    )
+
+    today = datetime.now().strftime(
+        "%Y-%m-%d"
+    )
+
+    due_grammar = []
+
+    # =========================
+    # FIND DUE ITEMS
+    # =========================
+
+    for grammar, srs_data in (
+
+        progress["srs"].items()
+
+    ):
+
+        if (
+            srs_data["next_review"]
+            <= today
+        ):
+
+            due_grammar.append(grammar)
+
+    # =========================
+    # NO REVIEWS
+    # =========================
+
+    if len(due_grammar) == 0:
+
+        print(
+            "\nNo reviews today!"
+        )
+
+        return
+
+    print(
+        f"\nYou have "
+        f"{len(due_grammar)} "
+        f"reviews today."
+    )
+
+    # =========================
+    # QUIZ LOOP
+    # =========================
+
+    for grammar_name in due_grammar:
+
+        item = None
+
+        for data in GRAMMAR_DATA:
+
+            if (
+                data["grammar"]
+                == grammar_name
+            ):
+
+                item = data
+
+                break
+
+        if item is None:
+            continue
+
+        print(
+            "\n------------------"
+        )
+
+        print(item["quiz"])
+
+        answer = input(
+            "\nYour answer: "
+        ).strip()
+
+        if answer == item["answer"]:
+
+            print("✅ Correct")
+
+            update_srs(
+                progress,
+                grammar_name,
+                True
+            )
+
+        else:
+
+            print("❌ Wrong")
+
+            print(
+                "Correct:",
+                item["answer"]
+            )
+
+            update_srs(
+                progress,
+                grammar_name,
+                False
+            )
+
+    save_progress(progress)
+
 
 # =========================
 # MAIN MENU
@@ -238,8 +628,10 @@ def main():
         print("1. Study Grammar")
         print("2. Grammar Quiz")
         print("3. Vocabulary Quiz")
-        print("4. Statistics")
-        print("5. Exit")
+        print("4. Daily Review")
+        print("5. Weak Grammar Review")
+        print("6. Statistics")
+        print("7. Exit")
 
         choice = input(
             "\nSelect option: "
@@ -255,9 +647,15 @@ def main():
             vocab_quiz()
 
         elif choice == "4":
-            statistics_mode()
+            daily_review()
 
         elif choice == "5":
+            weak_grammar_review()
+
+        elif choice == "6":
+            statistics_mode()
+
+        elif choice == "7":
 
             print(
                 "\nGood luck with JLPT N1!"
